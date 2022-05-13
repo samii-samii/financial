@@ -49,7 +49,7 @@ const clients = {
           var end = new Date(endDay*1000);
           var start_to_week = start.getDay();
           var end_to_week = end.getDay();
-                    // Разница в днях
+                    // Разница в днях между начальным и конечным днем
           var diffDay = (end - start) / (1000 * 60 * 60 * 24) + 1;
           var diffWeekDay = diffDay - (start_to_week ==0?0:7-start_to_week) + end_to_week;
                    // Расчет состоит из нескольких полных недель
